@@ -10,6 +10,9 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
     usertag,
     userlocation,
     userstats,
+    statsItem,
+    label,
+    quantity,
   } = styles;
   return (
     <section className="profile">
@@ -22,17 +25,17 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         </div>
 
         <ul className={userstats}>
-          <li>
-            <span className="label">Followers</span>
-            <span className="quantity">{stats.followers}</span>
+          <li className={statsItem}>
+            <span className={label}>Followers</span>
+            <span className={quantity}>{stats.followers}</span>
           </li>
-          <li>
-            <span className="label">Views</span>
-            <span className="quantity">{stats.views}</span>
+          <li className={statsItem}>
+            <span className={label}>Views</span>
+            <span className={quantity}>{stats.views}</span>
           </li>
-          <li>
-            <span className="label">Likes</span>
-            <span className="quantity">{stats.likes}</span>
+          <li className={statsItem}>
+            <span className={label}>Likes</span>
+            <span className={quantity}>{stats.likes}</span>
           </li>
         </ul>
       </div>

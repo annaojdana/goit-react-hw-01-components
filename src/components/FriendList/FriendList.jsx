@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from './FriendList.module.css';
+// import styles from './FriendList.module.css';
 
 export const FriendList = ({ friends }) => {
   return (
@@ -19,7 +19,4 @@ export const FriendList = ({ friends }) => {
 
 FriendList.propTypes = {
   friends: PropTypes.array,
-  // avatar: PropTypes.string,
-  // name: PropTypes.string.isRequired,
-  // isOnline: PropTypes.bool.isRequired,
 };
