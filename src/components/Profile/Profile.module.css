@@ -1,0 +1,35 @@
+.card {
+  margin: 100px auto;
+  width: 300px;
+  border-radius: 8px;
+  -webkit-box-shadow: 7px 7px 18px -3px rgba(66, 68, 90, 0.35);
+  -moz-box-shadow: 7px 7px 18px -3px rgba(66, 68, 90, 0.35);
+  box-shadow: 7px 7px 18px -3px rgba(66, 68, 90, 0.35);
+}
+.description {
+  padding: 30px;
+}
+.avatarImg {
+  margin: 0 auto;
+  width: 150px;
+  border-radius: 50%;
+}
+.name {
+  margin: 10px 0;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+.usertag,
+.userlocation {
+  font-size: 20px;
+  text-align: center;
+  color: #aaa;
+}
+
+.userlocation {
+  margin-top: 10px;
+}
+.userstats{
+  display: flex;
+}
