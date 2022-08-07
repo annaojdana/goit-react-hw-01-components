@@ -1,12 +1,11 @@
 .list {
   margin: 100px auto;
-  width: 80%;
+  width: 90%;
   max-width: 500px;
   list-style: none;
 }
 .item {
   padding: 15px 0 15px 25px;
-  width: 100%;
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -19,15 +18,15 @@
   margin-bottom: 20px;
 }
 .avatarImg {
-  margin-right: 25px;
+  margin-right: 20px;
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 8px;
 }
 .online,
 .offline {
-  margin-right: 25px;
+  margin-right: 20px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -40,6 +39,6 @@
 }
 .friendName
 {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
 }
