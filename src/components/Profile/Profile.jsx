@@ -14,7 +14,6 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
     label,
     quantity,
   } = styles;
-  console.log(stats.followers.toLocaleString('en-EN'));
 
   return (
     <section className="profile">
@@ -30,7 +29,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
           <li className={statsItem}>
             <span className={label}>Followers</span>
             <span className={quantity}>
-              {stats.followers.toLocaleString('en-EN').toLocaleString()}
+              {stats.followers.toLocaleString('en-EN')}
             </span>
           </li>
           <li className={statsItem}>
