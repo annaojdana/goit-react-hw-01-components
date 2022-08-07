@@ -1,8 +1,17 @@
 import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
+import { getRandomHexColor } from 'js/getRandomHexColor';
 
 export const Statistics = ({ title, stats }) => {
-  const { statistics, statsCard, statsTitle, list, item } = styles;
+  const {
+    statistics,
+    statsCard,
+    statsTitle,
+    list,
+    item,
+    statsLabel,
+    statsPercentage,
+  } = styles;
   let statsNum = stats.length;
   let itemWidth = (100 / statsNum).toString() + '%';
   console.log(itemWidth);
@@ -17,11 +26,12 @@ export const Statistics = ({ title, stats }) => {
               key={id}
               className={item}
               style={{
-                width: { itemWidth },
+                backgroundColor: getRandomHexColor(),
+                width: itemWidth,
               }}
             >
-              <span className="label">{label}</span>
-              <span className="percentage">{percentage}%</span>
+              <span className={statsLabel}>{label}</span>
+              <span className={statsPercentage}>{percentage}%</span>
             </li>
           ))}
         </ul>
